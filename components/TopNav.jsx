@@ -4,9 +4,11 @@
 
 
 import { usePathname } from "next/navigation";
+import { useAuth } from "@/context/AuthContext";
 
 const TopNav = () => {
     const pathname = usePathname();
+    const{ user } = useAuth();
 
     const pageTitle = pathname === "/"
         ? "Home"
@@ -18,6 +20,9 @@ const TopNav = () => {
                 <h1 className="text-xl font-semibold text-gray-800">
                     {pageTitle}
                 </h1>
+                <p className="text-sm">
+                    Welcome, {user?.name || "Guest"}
+                </p>
             </div>
 
             <div className="flex items-center gap-4">

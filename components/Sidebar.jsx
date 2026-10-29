@@ -41,6 +41,7 @@ const Sidebar = () => {
 
             {/* Logout Button */}
             <div className="px-4 mt-auto">
+                
                 <button
                     onClick={logout}
                     className="w-full text-left px-4 py-2 text-red-300 hover:bg-sky-800 rounded transition-colors"
