@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="border-t border-white/10 bg-[#030b27] px-6 py-10 text-white">
+    <footer className="border-t border-white/10 bg-[#030b27] px-6 py-10 text-white mt-4">
 
       <div className="mx-auto max-w-[1600px]">
 
